@@ -1,4 +1,4 @@
-# Basketball Detection System Using YOLOv8
+# 🏀 Basketball Detection System Using YOLOv8
 
 A computer vision project built using **YOLOv8**, **OpenCV**, and **Python** to detect basketball players and sports balls from images and videos.
 
@@ -6,16 +6,16 @@ This project demonstrates object detection on basketball game footage using a YO
 
 ---
 
-## Live Demo
+## 🚀 Live Demo
 
-**Live demo:**
+🔗 **Live demo:**
 Coming soon
 
 > The project is currently prepared for GitHub. Deployment can be added later using Streamlit Cloud, Hugging Face Spaces, or another free hosting platform.
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
 This project focuses on detecting key objects in basketball gameplay footage:
 
@@ -28,7 +28,7 @@ The project includes a training notebook and an inference script, making it usef
 
 ---
 
-## Features
+## ✨ Features
 
 * Detect basketball players in images and videos
 * Detect sports ball / basketball
@@ -44,7 +44,7 @@ The project includes a training notebook and an inference script, making it usef
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 * **Python**
 * **YOLOv8**
@@ -58,7 +58,7 @@ The project includes a training notebook and an inference script, making it usef
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 Basketball-Detection-System/
@@ -86,7 +86,7 @@ Basketball-Detection-System/
 
 ---
 
-## Model Information
+## 🧠 Model Information
 
 The project uses a YOLO-based object detection model.
 
@@ -106,7 +106,7 @@ Then run inference using the custom model path.
 
 ---
 
-## Detection Classes
+## 🎯 Detection Classes
 
 When using the default YOLO model, the main useful COCO classes are:
 
@@ -126,7 +126,7 @@ Recommended custom classes:
 
 ---
 
-## Detection Output
+## 🎨 Detection Output
 
 The model detects objects and generates annotated output with bounding boxes.
 
@@ -137,7 +137,7 @@ The model detects objects and generates annotated output with bounding boxes.
 
 ---
 
-## How It Works
+## ⚙️ How It Works
 
 1. User provides an image or video input.
 2. YOLOv8 model loads from the selected model path.
@@ -149,7 +149,7 @@ The model detects objects and generates annotated output with bounding boxes.
 
 ---
 
-## Installation
+## 📦 Installation
 
 Clone the repository:
 
@@ -166,7 +166,7 @@ pip install -r requirements.txt
 
 ---
 
-## Run Detection
+## ▶️ Run Detection
 
 ### Run on Video
 
@@ -188,7 +188,7 @@ python main.py --model models/best.pt --source input_videos/video_1.mp4 --save
 
 ---
 
-## requirements.txt
+## 📋 requirements.txt
 
 ```txt
 ultralytics
@@ -201,7 +201,7 @@ numpy
 
 ---
 
-## Training Notebook
+## 🧪 Training Notebook
 
 The project includes a training notebook:
 
@@ -222,7 +222,7 @@ The notebook is used for:
 
 ---
 
-## Environment Variable
+## 🔐 Environment Variable
 
 Create a `.env` file locally if using Roboflow:
 
@@ -240,7 +240,7 @@ Do not push the real `.env` file to GitHub.
 
 ---
 
-## Future Deployment Options
+## 🚀 Future Deployment Options
 
 This project can be deployed using:
 
@@ -259,7 +259,7 @@ Build a Streamlit interface where users can upload basketball videos/images and 
 
 ---
 
-## Current Capability
+## 📌 Current Capability
 
 The current version can:
 
@@ -273,7 +273,7 @@ The current version can:
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 * Add Streamlit web application
 * Add real-time webcam detection
@@ -291,7 +291,7 @@ The current version can:
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Aditya Khare**
 
@@ -303,12 +303,12 @@ https://github.com/Adityakhare123/Basketball-detection-
 
 ---
 
-## Support
+## ⭐ Support
 
-If you like this project, consider giving it a star on GitHub.
+If you like this project, consider giving it a ⭐ on GitHub.
 
 ---
 
-## License
+## 📄 License
 
 This project is created for learning, experimentation, computer vision practice, and portfolio demonstration purposes.
