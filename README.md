@@ -1,262 +1,172 @@
-# 📈 OneTradeAI - AI Trading Dashboard
+# Basketball Detection System Using YOLOv8
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:3b82f6,100:8b5cf6&height=220&section=header&text=OneTradeAI&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=React%20%7C%20Flask%20%7C%20SQLite%20%7C%20Machine%20Learning%20Trading%20Dashboard&descAlignY=60&descAlign=50&descSize=18" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:f97316,100:3b82f6&height=220&section=header&text=Basketball%20Detection%20System&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=YOLOv8%20%7C%20OpenCV%20%7C%20Python%20%7C%20Computer%20Vision%20%7C%20Sports%20Analytics&descAlignY=60&descAlign=50&descSize=17" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Backend-Flask-111827?style=for-the-badge&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/ML-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Trading-AI%20Dashboard-22c55e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/YOLOv8-111827?style=for-the-badge&logo=yolo&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ultralytics-000000?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Roboflow-6706CE?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Computer%20Vision-Sports%20Analytics-f97316?style=for-the-badge" />
 </p>
 
 <p align="center">
-  A full-stack AI-based trading dashboard where users can sign up, log in, add trade entries, track recent trades, and get market prediction suggestions from a Flask-based ML backend.
+  A computer vision project for detecting basketball players and sports balls from images and videos using YOLO-based object detection.
 </p>
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
-**OneTradeAI** is a demo/training-style AI trading dashboard built using **React**, **Flask**, **SQLite**, and **Python ML libraries**.
+**Basketball Detection System** is a computer vision project built using **Python**, **YOLOv8**, **Ultralytics**, and **OpenCV**.
 
-The application allows users to:
+The project focuses on detecting important objects from basketball gameplay media:
 
-* Create an account
-* Log in securely
-* Add trade entries
-* Set profit target limits
-* Set stop-loss limits
-* View recent trade history
-* Run backend prediction logic for pending trades
-* Use market data to generate AI-based buy/sell suggestions
+* Basketball players
+* Sports ball / basketball
 
-> ⚠️ This project is created for learning and portfolio purposes only. It is not financial advice and should not be used for real-money trading decisions.
+The system can run object detection on images and videos, generate bounding boxes, save annotated outputs, and support custom-trained YOLO models.
+
+This project is designed for learning, experimentation, sports analytics practice, and portfolio demonstration.
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-* 🔐 User signup and login
-* 📊 Trading dashboard
-* ➕ Add new trade entries
-* 🎯 Profit target tracking
-* 🛡️ Stop-loss tracking
-* 📜 Recent trade history
-* 🤖 AI/ML-based prediction endpoint
-* 📈 Market data fetching using `yfinance`
-* 🧠 LSTM/TensorFlow-based prediction logic
-* 💾 SQLite database integration
-* 🌐 React frontend with Flask REST API backend
-* 🎨 Premium dark UI design
+* Player detection from basketball videos
+* Sports ball / basketball detection
+* Image inference support
+* Video inference support
+* YOLOv8 object detection pipeline
+* OpenCV-based image and video processing
+* Custom trained model support
+* Roboflow dataset training workflow
+* Training notebook included
+* Confidence threshold control
+* Clean GitHub-ready project structure
+* Extendable into a full basketball analytics system
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,js,python,flask,sqlite,html,css,bootstrap,github,git,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,opencv,pytorch,git,github,vscode" />
 </p>
 
-### Frontend
-
-* React
-* React Bootstrap
-* React Router
-* JavaScript
-* HTML/CSS
-
-### Backend
-
-* Flask
-* Flask RESTful
-* Flask SQLAlchemy
-* Flask CORS
-* SQLite
-
-### Machine Learning / Prediction
+### Core Technologies
 
 * Python
-* TensorFlow / Keras
-* pandas
-* yfinance
-* TA-Lib
-* LSTM model logic
+* YOLOv8
+* Ultralytics
+* OpenCV
+* Roboflow
+* NumPy
+* Matplotlib
+* Deep Learning
+* Computer Vision
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
-OneTrade-AI/
+Basketball-detection-/
 │
+├── main.py
+├── requirements.txt
 ├── README.md
-├── Paper.txt
+├── .gitignore
+├── .env.example
 │
-├── backend/
-│   └── backend/
-│       ├── main.py
-│       ├── requirements.txt
-│       ├── database.db
-│       │
-│       ├── controllers/
-│       │   ├── auth.py
-│       │   ├── trade.py
-│       │   └── predict.py
-│       │
-│       ├── models/
-│       │   ├── User.py
-│       │   └── Trades.py
-│       │
-│       └── lib/
-│           └── db.py
+├── input_videos/
+│   └── .gitkeep
 │
-├── frontend/
-│   └── frontend/
-│       ├── package.json
-│       ├── public/
-│       └── src/
-│           ├── App.js
-│           ├── index.js
-│           │
-│           └── components/
-│               ├── AppNavbar.js
-│               ├── Home.js
-│               ├── Login.js
-│               ├── SignUp.js
-│               ├── Dashboard.js
-│               ├── Features.js
-│               ├── Pricing.js
-│               ├── Contact.js
-│               ├── MyProfile.js
-│               ├── Settings.js
-│               └── style.css
+├── models/
+│   └── .gitkeep
 │
-└── back_algo/
-    └── back_algo/
-        └── crypto prediction notebooks / experiments
+├── training_notebooks/
+│   └── basketball_training.ipynb
+│
+└── runs/
+    └── detect/
 ```
+
+> Note: The `runs/`, video files, trained weights, and other large generated outputs are ignored in Git to keep the repository lightweight.
 
 ---
 
-## ⚙️ How the App Works
+## Model Information
+
+The project can use either a pretrained YOLO model or a custom-trained basketball model.
+
+Default YOLO model:
 
 ```text
-User opens React frontend
-        ↓
-User signs up or logs in
-        ↓
-Session data is stored in localStorage
-        ↓
-User adds trade details from dashboard
-        ↓
-Flask backend stores trade in SQLite database
-        ↓
-Dashboard fetches recent trades
-        ↓
-Prediction endpoint checks pending trades
-        ↓
-ML logic analyzes market movement
-        ↓
-Trade status can be updated based on prediction
+yolov8x.pt
+```
+
+For custom model inference, place the trained model inside the `models/` folder:
+
+```text
+models/best.pt
+```
+
+Recommended custom class mapping:
+
+```text
+0 = Basketball Player
+1 = Basketball
+```
+
+When using the default COCO-trained YOLO model, the useful classes are:
+
+```text
+0  = Person
+32 = Sports Ball
 ```
 
 ---
 
-## 🔗 API Endpoints
+## How the System Works
 
-| Method | Endpoint                    | Description                             |
-| ------ | --------------------------- | --------------------------------------- |
-| POST   | `/login`                    | Login existing user                     |
-| POST   | `/sign_up`                  | Create new user                         |
-| POST   | `/add_trade`                | Add a new trade                         |
-| GET    | `/recent_trades?userId=...` | Fetch recent trades for a user          |
-| GET    | `/predict`                  | Run prediction logic for pending trades |
-
----
-
-## 🧪 API Testing Examples
-
-### Signup
-
-```http
-POST http://127.0.0.1:5000/sign_up
-```
-
-```json
-{
-  "email": "test@gmail.com",
-  "password": "123456",
-  "confirm_password": "123456"
-}
-```
-
-### Login
-
-```http
-POST http://127.0.0.1:5000/login
-```
-
-```json
-{
-  "email": "test@gmail.com",
-  "password": "123456"
-}
-```
-
-### Add Trade
-
-```http
-POST http://127.0.0.1:5000/add_trade
-```
-
-```json
-{
-  "symbol": "BTC-USD",
-  "amount": 1000,
-  "profitLimit": 10,
-  "stopLoss": 5,
-  "userId": 1,
-  "time": "2026-06-22T10:00:00.000Z"
-}
-```
-
-### Recent Trades
-
-```http
-GET http://127.0.0.1:5000/recent_trades?userId=1
+```text
+User provides image or video input
+        ↓
+YOLO model is loaded
+        ↓
+Input media is passed through the detection model
+        ↓
+Players and ball are detected
+        ↓
+Bounding boxes and confidence scores are generated
+        ↓
+Annotated output is saved
+        ↓
+Results can be reviewed from the output folder
 ```
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/Adityakhare123/OneTrade-AI.git
-cd OneTrade-AI
+git clone https://github.com/Adityakhare123/Basketball-detection-.git
+cd Basketball-detection-
 ```
 
----
-
-## ▶️ Backend Setup
-
-Go to backend folder:
-
-```bash
-cd backend/backend
-```
-
-Create virtual environment:
+Create a virtual environment:
 
 ```bash
 python -m venv venv
 ```
 
-Activate virtual environment:
+Activate the virtual environment:
 
 ### Windows
 
@@ -270,286 +180,232 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-Install backend dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-If `requirements.txt` is missing or incomplete, install common packages manually:
+---
+
+## Run Detection
+
+### Run Detection on Video
 
 ```bash
-pip install flask flask-restful flask-sqlalchemy flask-cors requests pandas yfinance tensorflow
+python main.py --source input_videos/video_1.mp4 --save
 ```
 
-Run backend:
+### Run Detection on Image
 
 ```bash
-python main.py
+python main.py --source input_images/image_1.jpg --save
 ```
 
-Backend will start at:
-
-```text
-http://127.0.0.1:5000
-```
-
-Test backend home route:
-
-```text
-http://127.0.0.1:5000/
-```
-
-Expected response:
-
-```json
-{
-  "message": "OneTradeAI backend is running",
-  "status": "success"
-}
-```
-
----
-
-## ▶️ Frontend Setup
-
-Open a new terminal and go to frontend folder:
+### Run Detection With Custom Model
 
 ```bash
-cd frontend/frontend
+python main.py --model models/best.pt --source input_videos/video_1.mp4 --save
 ```
 
-Install frontend dependencies:
+### Run With Custom Confidence Threshold
 
 ```bash
-npm install
-```
-
-Start React app:
-
-```bash
-npm start
-```
-
-Frontend will run at:
-
-```text
-http://localhost:3000
+python main.py --source input_videos/video_1.mp4 --conf 0.40 --save
 ```
 
 ---
 
-## 🧠 Prediction Logic
-
-The prediction module is located in:
-
-```text
-backend/backend/controllers/predict.py
-```
-
-The prediction logic:
-
-* Fetches pending trades
-* Downloads market data using `yfinance`
-* Uses technical indicators like RSI
-* Applies TensorFlow/Keras LSTM model logic
-* Compares predicted direction with profit and stop-loss rules
-* Updates trade status after evaluation
-
-> Note: The `/predict` endpoint may require additional ML dependencies like TensorFlow, yfinance, pandas, and TA-Lib. TA-Lib can be difficult to install on Windows, so prediction logic may need separate setup or cleanup.
-
----
-
-## 🖥️ Frontend Pages
-
-| Route        | Page              |
-| ------------ | ----------------- |
-| `/`          | Home page         |
-| `/login`     | Login page        |
-| `/signup`    | Signup page       |
-| `/dashboard` | Trading dashboard |
-| `/features`  | Features page     |
-| `/pricing`   | Pricing page      |
-| `/contact`   | Contact page      |
-| `/profile`   | User profile      |
-| `/settings`  | Settings page     |
-
----
-
-## 🎨 UI Design
-
-The project includes a premium dark trading dashboard UI with:
-
-* Glassmorphism cards
-* Gradient buttons
-* Modern navbar
-* Dark background
-* Trading stats cards
-* Clean login/signup screens
-* Responsive layout
-* Premium SaaS-style design
-
----
-
-## 🧪 Testing Checklist
-
-Use this checklist to verify the project:
-
-```text
-1. Start Flask backend
-2. Open http://127.0.0.1:5000/
-3. Start React frontend
-4. Open http://localhost:3000
-5. Create account from signup page
-6. Login with created user
-7. Open dashboard
-8. Add trade using BTC-USD
-9. Check recent trades table
-10. Test /recent_trades API
-11. Test /predict endpoint separately
-```
-
-Recommended test trade:
-
-```text
-Symbol: BTC-USD
-Stop Loss: 5
-Profit Target: 10
-Amount: 1000
-```
-
----
-
-## 📋 Requirements
-
-### Backend
+## requirements.txt
 
 ```txt
-flask
-flask-restful
-flask-sqlalchemy
-flask-cors
-requests
-pandas
-yfinance
-tensorflow
-keras
-TA-Lib
-```
-
-### Frontend
-
-```txt
-react
-react-bootstrap
-bootstrap
-react-router-dom
-axios
+ultralytics
+opencv-python
+matplotlib
+roboflow
+python-dotenv
+numpy
 ```
 
 ---
 
-## 🛠️ Common Issues
+## Training Notebook
 
-### 1. `ModuleNotFoundError: No module named flask_cors`
+The project includes a YOLO training notebook:
+
+```text
+training_notebooks/basketball_training.ipynb
+```
+
+The notebook is used for:
+
+* Installing required libraries
+* Connecting to Roboflow
+* Downloading the basketball dataset
+* Training YOLO model
+* Saving trained model weights
+* Testing detection output
+* Analyzing model performance
+
+> Important: Do not push real Roboflow API keys to GitHub. Use environment variables instead.
+
+---
+
+## Environment Variables
+
+Create a local `.env` file if using Roboflow:
+
+```env
+ROBOFLOW_API_KEY=your_roboflow_api_key_here
+```
+
+The repository includes:
+
+```text
+.env.example
+```
+
+Do not commit the real `.env` file.
+
+---
+
+## Output
+
+YOLO saves detection results inside the `runs/` directory by default:
+
+```text
+runs/detect/predict/
+```
+
+Example output files may include:
+
+```text
+image0.jpg
+video_1.avi
+```
+
+The `runs/` folder is ignored from Git because it contains generated outputs.
+
+---
+
+## Current Capability
+
+The current version supports:
+
+* Loading YOLO detection model
+* Detecting players in basketball footage
+* Detecting sports ball / basketball
+* Running inference on videos
+* Running inference on images
+* Saving annotated output
+* Using pretrained YOLO weights
+* Supporting custom trained YOLO weights
+* Training workflow through notebook
+
+---
+
+## Common Issues
+
+### 1. ModuleNotFoundError: No module named ultralytics
 
 Fix:
 
 ```bash
-pip install flask-cors
+pip install ultralytics
 ```
 
-### 2. `ModuleNotFoundError: No module named requests`
+### 2. OpenCV import error
 
 Fix:
 
 ```bash
-pip install requests
+pip install opencv-python
 ```
 
-### 3. Frontend not connecting to backend
+For deployment environments, use:
 
-Make sure Flask backend is running:
+```bash
+pip install opencv-python-headless
+```
+
+### 3. Input file not found
+
+Make sure the video or image exists in the correct folder:
 
 ```text
-http://127.0.0.1:5000
+input_videos/video_1.mp4
 ```
 
-Also confirm frontend API calls are using:
+### 4. Model file not found
+
+If using a custom model, make sure the file exists:
 
 ```text
-http://127.0.0.1:5000
+models/best.pt
 ```
 
-### 4. Database table error
+### 5. Large file push issue on GitHub
 
-Make sure `main.py` contains:
-
-```python
-with app.app_context():
-    db.create_all()
-```
-
-### 5. Prediction endpoint failing
-
-Install ML dependencies or test normal app flow first:
+Do not push:
 
 ```text
-signup → login → add trade → recent trades
+.pt model files
+.mp4 video files
+runs/ output folder
 ```
 
-Then debug `/predict`.
+These should remain ignored using `.gitignore`.
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
-* Improve prediction endpoint response handling
-* Add JWT-based authentication
-* Add password hashing
-* Replace SQLite with PostgreSQL
-* Add real-time market charts
-* Add candlestick chart visualization
-* Add trade type: Buy/Sell
-* Add portfolio summary
-* Add profit/loss analytics
-* Add loading skeletons
-* Deploy frontend on Vercel
-* Deploy backend on Render/Railway
-* Add Docker support
-* Add unit tests for APIs
-* Add README screenshots
-* Add live demo link
-
----
-
-## 📌 Current Project Status
-
-The current project supports:
-
-* React frontend
-* Flask backend
-* SQLite database
-* User signup/login
-* Add trade functionality
-* Recent trade display
-* Premium dashboard UI
-* Basic ML prediction flow
-
-Some areas may still need cleanup:
-
-* Prediction logic
-* API response consistency
-* Production authentication
-* Error handling
-* Deployment configuration
+* Add Streamlit web application
+* Add video upload interface
+* Add image upload interface
+* Add real-time webcam detection
+* Add basketball tracking
+* Add player tracking
+* Add player movement trails
+* Add team classification
+* Add jersey number recognition
+* Add court line detection
+* Add shot attempt detection
+* Add pass detection
+* Add possession analysis
+* Add player heatmap generation
+* Add highlight generation
+* Add model evaluation metrics
+* Deploy project on Streamlit Cloud or Hugging Face Spaces
 
 ---
 
-## 👨‍💻 Author
+## Current Project Status
+
+The current project includes:
+
+* YOLO inference script
+* Basketball training notebook
+* Requirements file
+* Git ignore setup
+* Environment variable example file
+* GitHub-ready folder structure
+
+Areas that can be improved later:
+
+* Add frontend UI
+* Add model hosting
+* Add deployment support
+* Add sample screenshots
+* Add trained model link
+* Add evaluation results
+
+---
+
+## Author
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:020617,100:3b82f6&height=120&section=footer&text=Aditya%20Khare&fontSize=36&fontColor=ffffff&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:020617,100:f97316&height=120&section=footer&text=Aditya%20Khare&fontSize=36&fontColor=ffffff&animation=fadeIn" />
 </p>
 
 **Aditya Khare**
@@ -558,17 +414,17 @@ Some areas may still need cleanup:
   <a href="https://github.com/Adityakhare123">
     <img src="https://img.shields.io/badge/GitHub-Adityakhare123-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://github.com/Adityakhare123/OneTrade-AI">
-    <img src="https://img.shields.io/badge/Project-OneTrade--AI-3b82f6?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/Adityakhare123/Basketball-detection-">
+    <img src="https://img.shields.io/badge/Project-Basketball--detection-3b82f6?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
 ---
 
-## ⭐ Support
+## Support
 
-If you like this project, consider giving it a ⭐ on GitHub.
+If you like this project, consider giving it a star on GitHub.
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:3b82f6,100:020617&height=120&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:f97316,100:020617&height=120&section=footer" />
 </p>
