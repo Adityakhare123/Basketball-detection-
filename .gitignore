@@ -1,4 +1,3 @@
-@'
 __pycache__/
 *.pyc
 
@@ -6,8 +5,8 @@ venv/
 .env
 
 runs/
-output/
-outputs/
+outputs/*
+!outputs/.gitkeep
 
 input_videos/*
 !input_videos/.gitkeep
@@ -26,4 +25,3 @@ models/*
 
 Basketball-Players-*/
 .roboflow/
-'@ | Out-File -Encoding UTF8 .gitignore

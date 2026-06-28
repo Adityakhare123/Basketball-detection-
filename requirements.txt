@@ -1,5 +1,10 @@
+streamlit
 ultralytics
-opencv-python
+opencv-python-headless
 matplotlib
 roboflow
 python-dotenv
+numpy
+pillow
+torch
+torchvision
